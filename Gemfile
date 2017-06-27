@@ -39,6 +39,12 @@ group :development, :test do
   # Adds support for Capybara system testing and selenium driver
   gem 'capybara', '~> 2.13'
   gem 'selenium-webdriver'
+
+  # Use RSpec for specs
+  gem 'rspec-rails', '>= 3.5.0'
+
+  # Use Factory Girl for generating random test data
+  gem 'factory_girl_rails'
 end
 
 group :development do
@@ -57,3 +63,6 @@ gem 'tzinfo-data', platforms: [:mingw, :mswin, :x64_mingw, :jruby]
 gem 'devise', '> 4.x'
 gem 'activeadmin', github: 'activeadmin'
 gem 'inherited_resources', git: 'https://github.com/activeadmin/inherited_resources'
+
+# React-Rails for Front end framework
+ gem 'react-rails', '~> 1.0'
